@@ -8,8 +8,4 @@ export const transactionScenario = {
 	// Rune configuration
 	runeId: "37535:8", // TODO: Retrieve from an executor
 	runeAmount: maxUint256,
-
-	btcFeeRate: 4,
-
-	addressPurposes: ["Payment", "Ordinals"] as const,
 } as const;
