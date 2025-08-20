@@ -1,0 +1,55 @@
+{
+	"txId": "0x7e3dd9272c759cea974baefa12e23c9e7e87e8329f669b653963d061c78d1e11",
+	"address": "0x4E6Ac2Cf16BA54Fc29cDa0fe32f82529A7276228",
+	"abi": [
+		{
+			"inputs": [{ "internalType": "contract IERC20", "name": "_collERC20", "type": "address" }],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"inputs": [{ "internalType": "address", "name": "token", "type": "address" }],
+			"name": "SafeERC20FailedOperation",
+			"type": "error"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{ "indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256" },
+				{ "indexed": false, "internalType": "address", "name": "user", "type": "address" }
+			],
+			"name": "RedemptionExecuted",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{ "indexed": false, "internalType": "uint256", "name": "amount", "type": "uint256" },
+				{ "indexed": false, "internalType": "address", "name": "user", "type": "address" }
+			],
+			"name": "RedemptionRequested",
+			"type": "event"
+		},
+		{
+			"inputs": [],
+			"name": "collateralERC20",
+			"outputs": [{ "internalType": "contract IERC20", "name": "", "type": "address" }],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "uint256", "name": "_amount", "type": "uint256" }],
+			"name": "depositRune",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [{ "internalType": "uint256", "name": "_amount", "type": "uint256" }],
+			"name": "withdrawRune",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

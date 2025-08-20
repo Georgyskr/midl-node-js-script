@@ -1,0 +1,46 @@
+{
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "MIDL Node.js application for transaction management",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "biome lint src/",
+    "format": "biome format --write src/",
+    "check": "biome check --write src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "midl",
+    "blockchain",
+    "nodejs",
+    "cryptocurrency"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@biomejs/biome": "^2.2.0",
+    "@midl-xyz/contracts": "^0.1.1",
+    "@midl-xyz/midl-js-core": "^2.0.1",
+    "@midl-xyz/midl-js-executor": "^2.0.1",
+    "@midl-xyz/midl-js-node": "^2.0.1",
+    "@types/node": "^24.3.0",
+    "dotenv": "^17.2.1",
+    "viem": "npm:@midl-xyz/midl-viem@2.21.37"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "viem": "npm:@midl-xyz/midl-viem"
+    }
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
