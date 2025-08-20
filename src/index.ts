@@ -112,12 +112,7 @@ async function main() {
 				localUnsignedIntentions.length,
 				"intentions created. Proceeding to finalize BTC transaction..."
 			);
-			const btcTx = await finalizeBTCTransaction(
-				midlConfig,
-				localUnsignedIntentions,
-				walletClient,
-				{ feeRate: transactionScenario.btcFeeRate }
-			);
+			const btcTx = await finalizeBTCTransaction(midlConfig, localUnsignedIntentions, walletClient);
 
 			console.log("BTC Tx Finalized. Proceeding to signing intentions...");
 
